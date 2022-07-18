@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=========== common style===========  */
+body {
+    background: #F3F1FF;
+}
+
+/*--------- container styles -------------- */
+main {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: 870px;
+    padding: 33px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/*================= players style starts ===============*/
+.top-players {
+    display: grid;
+}
+
+.box-title {
+    margin-bottom: 40px;
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 40px;
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.players-name {
+    margin-left: 16px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+
+}
+
+/*=============== players part done ========= */
+
+/*================ blogs part starts =============== */
+
+
+
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-text {
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.blog-text h3 {
+    padding-bottom: 15px;
+}
+
+.blog-author {
+    color: #9F9F9F;
+}
+
+.blog-author a {
+    text-decoration: none;
+}
+
+/*================ blogs part end =============== */
+
+/*===============
+     course part start 
+          ============ */
+
+.courses {
+    /* box-shadow: 4px 4px 10px gray; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+    margin-bottom: 18px;
+}
+
+.course-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.course-author {
+    color: #ED6B4F;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star.filed {
+    color: #FFC014;
+}
+
+/*============ course parts end ========== */
