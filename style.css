@@ -180,6 +180,11 @@ hr {
         flex-direction: column;
     }
 
+    .players-name,
+    .blog-text {
+        margin: 0;
+    }
+
     .course {
         margin-bottom: 20px;
     }
