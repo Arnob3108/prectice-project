@@ -26,9 +26,7 @@ main {
 }
 
 /*================= players style starts ===============*/
-.top-players {
-    display: grid;
-}
+
 
 .box-title {
     margin-bottom: 40px;
@@ -114,8 +112,15 @@ hr {
 
 .courses {
     /* box-shadow: 4px 4px 10px gray; */
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.course {
+    box-shadow: 0px 9px 9px rgb(205, 204, 204);
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .course img {
@@ -139,8 +144,51 @@ hr {
     justify-content: space-between;
 }
 
+.rating {
+    margin-left: -35px;
+}
+
 .fa-star.filed {
     color: #FFC014;
 }
 
+.clock {
+    background: rgb(229, 226, 226);
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+
 /*============ course parts end ========== */
+
+/*============== media quary for mobile devices========== */
+
+@media screen and (max-width:688px) {
+
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .course {
+        margin-bottom: 20px;
+    }
+
+    /*============== media quary for mobile devices end========== */
+
+
+
+
+
+
+}
